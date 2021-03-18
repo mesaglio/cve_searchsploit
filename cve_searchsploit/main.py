@@ -175,6 +175,8 @@ def _search_cve_aux(cve):
         if edb in cve_map[cve]:
             found = True
             print(" Exploit DB Id: " + edb)
+            print(" Exploit url: " +
+                  f'https://www.exploit-db.com/exploits/{edb}')
             print(" File: " + pdir + "/exploit-database/" + file)
             print(" Date: " + date)
             print(" Author: " + author)
